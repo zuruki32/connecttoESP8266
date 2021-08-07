@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.ribbit.MainActivity$PlaceholderFragment">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.appbar.AppBarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/AppTheme.AppBarOverlay">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="79dp"
+                        android:gravity="center"
+                        android:text="wifi_p2p section"
+                        android:textColor="#FFFFFF"
+                        android:textSize="30sp" />
+
+                    <androidx.appcompat.widget.Toolbar
+                        android:id="@+id/toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="9dp"
+                        android:background="?attr/colorPrimary"
+                        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+                </com.google.android.material.appbar.AppBarLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="444dp"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/discoverybtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="discovery" />
+
+                    <Button
+                        android:id="@+id/wifibtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="wifistatus" />
+
+                    <ListView
+                        android:id="@+id/listView"
+                        android:layout_width="match_parent"
+                        android:layout_height="378dp"
+                        android:background="#aadbee"
+                        android:divider="@android:drawable/divider_horizontal_textfield"
+                        android:headerDividersEnabled="true"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
